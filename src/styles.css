@@ -1,0 +1,87 @@
+/* Start Variables */
+:root{
+    --main-light-color:#ffffff;
+    --main-transition:0.2s;
+    --main-margin:115px;
+    --main-dark-color:#252B42;
+    --main-dark-background-color:#252B42;
+    --title-font-size:48px;
+    --intern-margin:50px;
+    --primary-padding:20px;
+    --sec-light-color:#2090f9;
+}
+/* End Variables */
+
+/* Start Global Rules */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    letter-spacing: 0.2px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+   /* Small Screens */
+    @media (min-width: 768px)  {
+        .container{
+            width: 750px;
+        }
+    }
+    /* Medium Screens */
+    @media (min-width: 992px) {
+        .container{
+            width: 970px;
+        }
+    }
+     /* Large Screens */
+    @media (min-width: 1200px) {
+        .container{
+            width: 1170px;
+        }
+    }
+/* Reveal Elements On Scroll */
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+button.btn-primary{
+  border-radius: 35px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+  background-color: #2090f9ef;
+  cursor: pointer;
+  color: var(--main-light-color);
+  border: none;
+  font-size: 20px;
+  padding:16px 0px;
+  text-align: center;
+  margin-top: 40px;
+  width: 236px;
+  height: 52px;
+  z-index: 9999;
+}
+button.btn-primary:hover{
+  background-color: var(--sec-light-color);
+}
+/* End Global Rules */

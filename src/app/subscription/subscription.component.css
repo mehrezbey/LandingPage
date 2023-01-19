@@ -1,0 +1,98 @@
+.subscription{
+  margin-top: var(--main-margin);
+  padding: 50px;
+
+}
+.subscription .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.subscription .container .left-part{
+  width: 45%;
+}
+.subscription .container .left-part img{
+  width: 400px;;
+}
+.subscription .container .right-part{
+  color: var(--main-dark-color);
+}
+.subscription .container .right-part h3{
+  font-weight: normal;
+}
+.subscription .container .right-part h2{
+  font-weight: normal;
+  margin: 20px 0;
+  font-size: var(--title-font-size);
+  font-weight: bold;
+}
+.subscription .container .right-part .action h3{
+  font-weight: bold;
+  font-size: 20px;
+}
+.subscription .container .right-part .action div{
+  font-weight: normal;
+  font-size: 18;
+  color: #374754;
+}
+.subscription .container .right-part .action form{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+
+}
+.subscription .container .right-part .action form input{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: #F5F5F5;
+  border: 1px solid #E8E8E8;
+  padding: 5px 10px;
+  font-size: 17px;
+  width: 80%;
+    margin-right: 30px;
+}
+.subscription .container .right-part .action form button{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: #2090f9ef;
+  cursor: pointer;
+  color: var(--main-light-color);
+  border: none;
+  padding:10px 30px ;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .subscription .container{
+    flex-direction: column;
+  }
+  .subscription .container .left-part{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .subscription .container .right-part{
+    text-align: center;
+    margin-top: 50px;
+  }
+  .subscription .container .left-part img{
+    width: min(100%,450px);
+  }
+}
+@media (max-width: 768px)  {
+  .subscription .container .right-part .action form{
+    flex-direction: column;
+
+  }
+  .subscription .container .right-part .action form input , .subscription .container .right-part .action form button{
+    width: 80%;
+    margin: 15px;
+  }
+}

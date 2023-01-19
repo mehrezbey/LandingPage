@@ -1,0 +1,108 @@
+.pricing{
+  background-color: var(--main-dark-background-color);
+  padding: 100px 0px;
+  margin-top: var(--main-margin);
+}
+
+.pricing .title{
+  font-size: var(--title-font-size);
+  color: var(--main-light-color);
+  text-align: center;
+  font-weight: bold;
+}
+.pricing .description {
+  color: var(--main-light-color);
+  width: 80%;
+  margin: 20px auto 0;
+  text-align: center;
+  font-size: 22px;
+}
+.pricing .offers{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(270px,1fr));
+  gap: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+.pricing .offers .offer{
+  background-color: var(--main-light-color);
+  color: var(--main-dark-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 30px 10px;
+  margin-top: var(--intern-margin);
+}
+.pricing .offers .offer .offer-name{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.pricing .offers .offer .offer-description{
+  margin-top: 10px;
+
+}
+.pricing .offers .offer .offer-price{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .offers .offer .offer-price .number{
+  font-size: 74px;
+  font-weight: bold;
+}
+.pricing .offers .offer .offer-price .info{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+.pricing .offers .offer .offer-price .info .unit{
+  font-weight: bold;
+  font-size: 20px;
+}
+.pricing .offers .offer .feature{
+  margin: 20px 0px;
+}
+.pricing .offers .offer.standard-offer{
+  position: relative;
+  background-color: var(--sec-light-color);
+  color: var(--main-light-color);
+}
+.pricing .offers .offer.standard-offer::before{
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 120%;
+  background-color: var(--sec-light-color);
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  -webkit-transform: translate(50%,-50%);
+  -moz-transform: translate(50%,-50%);
+  -ms-transform: translate(50%,-50%);
+  -o-transform: translate(50%,-50%);
+  z-index: -1;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.pricing .offers .offer.standard-offer button{
+  background-color: var(--main-light-color);
+  color: var(--sec-light-color);;
+}
+@media (max-width: 768px)  {
+  .pricing .offers .offer{
+    width: 280px;
+    margin: 30px auto;
+    padding: 50px 10px;
+  }
+  .pricing .offers .offer.standard-offer::before{
+    display: none;
+  }
+}

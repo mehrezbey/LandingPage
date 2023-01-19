@@ -1,0 +1,79 @@
+.features{
+  margin-top: var(--main-margin);
+}
+.features .container .title{
+  color: var(--main-dark-color);
+  text-align: center;
+  font-size: var(--title-font-size);
+  letter-spacing: 0.2px;
+  font-weight: bold;
+}
+.features .container .description{
+  color: var(--main-dark-color);
+  font-size: 28px;
+  letter-spacing: 0.2px;
+  width: 60vw;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+.features .container .features-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.features .container .features-content .features-grid{
+  margin-top: var(--intern-margin);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.features .container .features-content .features-grid .feature{
+  text-align: center;
+  padding: 0px 50px;
+}
+.features .container .features-content .features-grid .feature .feature-icon{
+  position: relative;
+  height: 50px;
+}
+.features .container .features-content .features-grid .feature .feature-icon .circle{
+  width: 20px;
+  height: 20px;
+  background-color: var(--sec-light-color);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-100%);
+  -webkit-transform: translate(50%,-100%);
+  -moz-transform: translate(50%,-100%);
+  -ms-transform: translate(50%,-100%);
+  -o-transform: translate(50%,-100%);
+}
+.features .container .features-content .features-grid .feature .feature-icon .square{
+  width: 20px;
+  height: 20px;
+  background-color: var(--sec-light-color);
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(125%,-25%);
+  -webkit-transform: translate(125%,-25%);
+  -moz-transform: translate(125%,-25%);
+  -ms-transform: translate(125%,-25%);
+  -o-transform: translate(125%,-25%);
+}
+.features .container .features-content .features-grid .feature .feature-title{
+  font-weight: bold;
+  font-size: 20px;
+}
+.features .container .features-content .features-grid .feature .feature-description{
+    margin-top: 20px;
+    font-size: 18px;
+
+}

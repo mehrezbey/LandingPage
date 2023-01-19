@@ -1,0 +1,166 @@
+.contact{
+  margin-top: var(--main-margin);
+  color: var(--main-dark-color);
+}
+.contact .container .contact-content{
+  text-align: center;
+}
+.contact .container .contact-content .title{
+  font-size: var(--title-font-size);
+  font-weight: bold;
+}
+
+.contact .container .contact-content .description{
+  font-size: 20px;
+  margin: 20px auto;
+  width: 60%;
+}
+.contact .container .contact-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--intern-margin);
+
+}
+.contact .container .contact-row .form-part{
+  width: 350px;
+  padding: 40px;
+  box-shadow: 0 0  10px 10px #ddd;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+
+}
+.contact .container .contact-row .form-part .form-title{
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+.contact .container .contact-row .form-part form{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  height: 100%;
+
+}
+.contact .container .contact-row .form-part form input{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: #F5F5F5;
+  width: 100%;
+  border: 1px solid #E8E8E8;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+.contact .container .contact-row .form-part form textarea{
+  border: 1px solid #E8E8E8;
+  padding: 5px 10px;
+  font-size: 17px;
+
+}
+.contact .container .contact-row .form-part form button{
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  background-color: #2090f9ef;
+  cursor: pointer;
+  color: var(--main-light-color);
+  border: none;
+  padding:10px 30px ;
+  text-align: center;
+}
+.contact .container .contact-row .form-part form button:hover{
+  background-color: var(--sec-light-color);
+}
+.contact .container .contact-row .information-part{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 400px);
+}
+.contact .container .contact-row .information-part .general-information{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .container .contact-row .information-part .general-information div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content:flex-start;
+  word-break: break-word;
+}
+
+.contact .container .contact-row .information-part .general-information div svg{
+  font-size: 25px;
+  color: var(--sec-light-color);
+  margin: 0 auto;
+}
+.contact .container .contact-row .information-part .general-information div div{
+  width: 100%;
+  margin-top: 15px;
+}
+.contact .container .contact-row .information-part .map{
+  margin: var(--intern-margin) auto;
+  width: 500px;
+  height: 300px;
+  text-align: center;
+}
+.contact .container .contact-row .information-part .map img{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact .container .contact-row .information-part .social-media a{
+  color:var(--sec-light-color); ;
+  font-size: 25px;
+  margin-right: 15px;
+}
+@media (max-width: 992px) {
+  .contact .container .contact-row .information-part .map{
+    display: none;
+  }
+  .contact .container .contact-row{
+    flex-direction: column-reverse;
+  }
+  .contact .container .contact-row .information-part {
+    flex-direction: column-reverse;
+    width: 100%;
+    text-align: center;
+  }
+  .contact .container .contact-row .information-part .social-media a{
+    margin-right: 25px;
+  }
+  .contact .container .contact-row .information-part .general-information{
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact .container .contact-row .information-part .general-information div{
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  .contact .container .contact-row .information-part .general-information div div{
+    margin: 0 0 0 30px ;
+  }
+  .contact .container .contact-row .form-part{
+    margin: var(--intern-margin) auto;
+  }
+  .contact .container .contact-row .form-part form *{
+    margin-top: 30px;
+  }
+  .contact .container .contact-content .description{
+    width: 100%;
+  }
+}
